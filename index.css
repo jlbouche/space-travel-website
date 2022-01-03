@@ -277,3 +277,25 @@ select {
 .dot-indicators > [aria-selected="true"] {
     background-color: hsl( var(--clr-white) / 1);
 }
+
+.number-indicators > * {
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 50%;
+    aspect-ratio: 1.75;
+    background-color: hsl( var(--clr-dark) );
+    color: hsl( var(--clr-white) );
+    font: var(--ff-sans-normal)
+}
+
+.number-indicators > *:hover,
+.number-indicators > *:focus {
+    border: 1;
+    border-color: hsl( var(--clr-white) )
+}
+
+.number-indicators > [aria-selected="true"] {
+    border: 0;
+    background-color: hsl( var(--clr-white) / 1);
+    color: hsl( var(--clr-dark) )
+}
